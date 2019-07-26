@@ -15,9 +15,14 @@ public class MyController {
         return "index";
     }
 
-    @GetMapping(value="/registration")
+    @GetMapping(value="/login")
+    public String logPage(){
+        return "login";
+    }
+
+    @GetMapping(value="/Register")
     public String regPage(){
-        return "register";
+        return "Register";
     }
 
 }
